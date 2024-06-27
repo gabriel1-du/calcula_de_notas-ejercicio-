@@ -1,12 +1,11 @@
 print("bienvenido a la calculadora de promedios de notas")
-a = float(input("Ingrese su primera nota :"))
-b = float(input("Ingrese su segunda nota :"))
-c = float(input("Ingrese su tercera nota :"))
-d = float(input("Ingrese su cuarta nota :"))
-e = float(input("Ingrese su quinta nota :"))
+suma_notas = 0 
 
-suma = a+b+c+d+e
-promedio = suma/5
+n_notas =  int(input("Ingrese la cantidad de notas que desea ingresar : "))
 
-print(f"El promedio de nota es : {promedio}")
+for i in range (1,n_notas+1) : 
+    nota = int(input(f"Ingrese una su nota numero {i} : " ))
+    suma_notas =+ nota
 
+print(suma_notas)
+    
